@@ -1,6 +1,7 @@
 cp -r ../ptdev/build/* .
 cp ../ptdev/md.json .
-cp -r ../ptdev/src/views .
+mkdir src
+cp -r ../ptdev/src/views ./src
 echo "Please enter the version:"
 read version
 date_time=`date +'%m%d'`
