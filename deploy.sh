@@ -1,4 +1,4 @@
-if [[ ! -d "src1" ]]; then
+if [[ ! -d "src" ]]; then
 	mkdir src
 fi
 cp -r ../ptdev/build/* .
