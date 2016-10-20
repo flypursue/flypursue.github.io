@@ -1,6 +1,8 @@
+if [[ ! -d "src1" ]]; then
+	mkdir src
+fi
 cp -r ../ptdev/build/* .
 cp ../ptdev/md.json .
-mkdir src
 cp -r ../ptdev/src/views ./src
 echo "Please enter the version:"
 read version
