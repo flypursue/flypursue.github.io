@@ -9,6 +9,7 @@
   background: url(../assets/images/menu-bg.jpg);
   color: #ffffff;
   ul {
+    height: 100%;
     list-style: none;
     display: flex;
     font-size: 16px;
@@ -34,7 +35,8 @@
   min-height: 600px;
   border-bottom: 5px solid #11559d;
   .left {
-    width: 250px;
+    width: 272px;
+    padding: 0 10px;
     .contact {
       background: url(../assets/images/contact.jpg);
       height: 31px;
@@ -54,5 +56,34 @@
       }
     }
   }
+  .right {
+    flex: 1;
+    padding: 0 10px;
+    .nav {
+      height: 38px;
+      line-height: 38px;
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #0174db;
 
+      }
+      border-bottom: 1px dashed #dbdbdb;
+    }
+    .description {
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000000;
+        border-bottom: 1px dashed #dbdbdb;
+        text-align: center;
+        margin: 30px 0;
+      }
+      p {
+        margin: 20px 0;
+        text-indent: 2em;
+        line-height: 2em;
+      }
+    }
+  }
 }
