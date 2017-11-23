@@ -1,0 +1,14 @@
+@import "app";
+@import "loading";
+@import "page";
+
+html {
+  font-size: 14px;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
