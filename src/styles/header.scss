@@ -3,24 +3,29 @@
     position: relative;
     .wrapper {
         width: 1000px;
+
         margin: 0 auto;
         height: 460px;
         .logo {
             img {
-                width: 560px;
-                height: 92px;
-            }
-        }
-        .phones {
-            width: 250px;
-            color: #ffffff;
-            position: absolute;
-            right: 0;
-            bottom: 100px;
-            p {
-                font-size: 24px;
+                width: 80px;
+                height: 80px;
             }
         }
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 300px;
+        .wrapper {
+            width: 100%;
+            .banner {
+                img {
+                    width: 100%
+                }
+            }
+        }
+    }
 }
