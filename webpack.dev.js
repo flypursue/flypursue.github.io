@@ -26,6 +26,10 @@ module.exports = {
 				]
 			},
 			{
+				test: /\.(jpg|png)$/,
+				loader: 'url-loader'
+			},
+			{
                 test: /\.js$/,
                 loaders: ['babel-loader'],
                 include: path.resolve(project.srcDir),

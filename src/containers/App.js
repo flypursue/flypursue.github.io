@@ -1,17 +1,14 @@
 import React from 'react';
+import Header from './Header';
+import MainContent from './MainContent';
 
 class App extends React.Component {
 
     render() {
-        const { children } = this.props;
         return (
             <div className="app">
-                <div className="nav">
-                    <p className="title">Let's crawler</p>
-                </div>
-                <div className="main">
-                    {children}
-                </div>
+                <Header />
+                <MainContent />
             </div>
         );
     }
