@@ -3,29 +3,56 @@
   margin: 0 auto;
   position: relative;
   top: -58px;
-  .menu {
-    height: 58px;
-    background: url(../assets/images/menu-bg.jpg);
-    color: #ffffff;
-    ul {
-      list-style: none;
-      display: flex;
-      font-size: 16px;
-      font-weight: bold;
-      align-items: center;
-      justify-content: center;
-      li {
-        text-align: center;
-        height: 30px;
-        flex: 1;
-        border-left: 2px solid;
-        &:first-child {
-          border-left: none;
-        }
-        a {
-          color: #ffffff;
-        }
+}
+.menu {
+  height: 58px;
+  background: url(../assets/images/menu-bg.jpg);
+  color: #ffffff;
+  ul {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    li {
+      text-align: center;
+      height: 30px;
+      flex: 1;
+      border-left: 2px solid;
+      &:first-child {
+        border-left: none;
+      }
+      a {
+        color: #ffffff;
       }
     }
   }
+}
+.content {
+  display: flex;
+  min-height: 600px;
+  border-bottom: 5px solid #11559d;
+  .left {
+    width: 250px;
+    .contact {
+      background: url(../assets/images/contact.jpg);
+      height: 31px;
+      font-size: 16px;
+      line-height: 31px;
+      color: #ffffff;
+      padding-left: 20px;
+      p {
+        margin: 5px 0;
+      }
+    }
+    .details {
+      font-size: 16px;
+      font-family: "宋体";
+      p {
+        margin: 10px 0;
+      }
+    }
+  }
+
 }
