@@ -1,3 +1,5 @@
+@import "page";
+
 .main {
   width: 1000px;
   margin: 0 auto;
@@ -20,9 +22,8 @@
       text-align: center;
       height: 30px;
       flex: 1;
-      border-left: 2px solid;
       &:first-child {
-        border-left: none;
+        border-right: none;
       }
       &.actived, &:hover {
         a {
@@ -39,60 +40,16 @@
 }
 .content {
   margin-top: 20px;
-  display: flex;
   min-height: 600px;
   border-bottom: 5px solid #11559d;
   .left {
     width: 272px;
     padding: 0 10px;
-    .contact {
-      background: url(../assets/images/contact.jpg);
-      height: 31px;
-      font-size: 16px;
-      line-height: 31px;
-      color: #ffffff;
-      padding-left: 20px;
-      p {
-        margin: 5px 0;
-      }
-    }
-    .details {
-      font-size: 16px;
-      font-family: "宋体";
-      p {
-        margin: 10px 0;
-      }
-    }
+    
   }
   .right {
     flex: 1;
     padding: 0 10px;
-    .nav {
-      height: 38px;
-      line-height: 38px;
-      .title {
-        font-size: 16px;
-        font-weight: bold;
-        color: #0174db;
-
-      }
-      border-bottom: 1px dashed #dbdbdb;
-    }
-    .description {
-      .title {
-        font-size: 16px;
-        font-weight: bold;
-        color: #000000;
-        border-bottom: 1px dashed #dbdbdb;
-        text-align: center;
-        margin: 30px 0;
-      }
-      p {
-        margin: 20px 0;
-        text-indent: 2em;
-        line-height: 2em;
-      }
-    }
   }
 }
 
@@ -101,8 +58,4 @@
   .main {
     width: 100%;
   }
-  .content {
-    flex-direction: column;
-  }
-
 }

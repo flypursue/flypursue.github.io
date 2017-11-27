@@ -2,9 +2,9 @@ import React from 'react';
 
 export default () => {
     return (
-        <div className="page">
+        <div className="page introduce">
             <div className="left">
-                <div className="contact">
+                <div className="left-nav">
                     <p>联系我们</p>
                 </div>
                 <div className="details">
@@ -15,7 +15,7 @@ export default () => {
                 </div>
             </div>
             <div className="right">
-                <div className="nav">
+                <div className="right-nav">
                     <p className="title">公司简介</p>
                 </div>
                 <div className="description">
