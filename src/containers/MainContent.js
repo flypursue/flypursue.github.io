@@ -1,16 +1,34 @@
 import React from 'react';
+import classNames from 'classnames';
+
+const menus = [
+    { 
+        name: '首页',
+        href: '#0'
+    },
+    { 
+        name: '产品展示',
+        href: '#1'
+    },
+    { 
+        name: '公司简介',
+        href: '#2'
+    },
+    { 
+        name: '联系我们',
+        href: '#3'
+    }
+];
 
 class MainContent extends React.Component {
 
     render() {
+        const hash = window ? '#0' : window.href.hash; 
         return (
             <div className="main">
                 <div className="menu">
                     <ul>
-                        <li><a href="index.php">首页</a></li>
-                        <li><a href="/index.php?m=Product&amp;a=index&amp;id=3">产品展示</a></li>
-                        <li><a href="/index.php?m=Page&amp;a=index&amp;id=1">公司简介</a></li>
-                        <li><a href="/index.php?m=Page&amp;a=index&amp;id=6">联系我们</a></li>
+                        {menus.map(({ name, href }) => <li className={classNames({ actived: hash === href })}><a href={href}>{name}</a></li>)}
                     </ul>
                 </div>
                 <div className="content">

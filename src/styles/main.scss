@@ -24,8 +24,14 @@
       &:first-child {
         border-left: none;
       }
+      &.actived, &:hover {
+        a {
+          opacity: 1;
+        }
+      }
       a {
         color: #ffffff;
+        opacity: .6;
       }
     }
   }
